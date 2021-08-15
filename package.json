@@ -1,17 +1,41 @@
 {
-  "name": "rtmd",
+	"name": "rtmd",
 	"displayName": "Real Time Markdown",
 	"description": "Render Markdown in real time in VSCode.",
 	"version": "0.0.1",
+	"license": "MIT",
+	"keywords": [
+		"markdown",
+		"md"
+	],
+	"author": {
+		"email": "zhengjunyi@live.com",
+		"name": "Mogeko"
+	},
+	"readme": "./README.md",
+	"extensionKind": [
+		"ui",
+		"workspace",
+		"web"
+	],
 	"engines": {
 		"vscode": "^1.46.0"
 	},
 	"categories": [
+		"Programming Languages",
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:rtmd.helloWorld"
+        "onLanguage:markdown"
 	],
+	"bugs": {
+		"url": "https://github.com/Mogeko/vscode-rtmd/issues"
+	},
+	"homepage": "https://github.com/Mogeko/vscode-rtmd",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Mogeko/vscode-rtmd.git"
+	},
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
